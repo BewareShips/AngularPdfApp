@@ -3,19 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UploadComponent } from './components/upload/upload.component';
+import { UploadComponent } from './pages/upload/upload.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { UserComponent } from './components/user/user.component';
-import { WrapperComponent } from './components/wrapper/wrapper.component';
-import { ChartComponent } from './components/chart/chart.component';
+import { UserComponent } from './pages/dashboard/dashboard.component';
+import { WrapperComponent } from './components/navbar/navbar.component';
+import { ChartComponent } from './components/cards/cards.component';
 import { NgChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { TypePieChartComponent } from './components/type-pie-chart/type-pie-chart.component';
 import { TypeLineChartComponent } from './components/type-line-chart/type-line-chart.component';
 import {MatIconModule} from '@angular/material/icon';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
-import { ForecastComponent } from './components/forecast/forecast.component';
+import { ForecastComponent } from './pages/forecast/forecast.component';
+import { ListComponent } from './pages/list/list.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ForecastComponent } from './components/forecast/forecast.component';
     TypePieChartComponent,
     TypeLineChartComponent,
     UserProfileComponent,
-    ForecastComponent
+    ForecastComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

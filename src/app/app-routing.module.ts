@@ -1,10 +1,11 @@
-import { ForecastComponent } from './components/forecast/forecast.component';
-import { UserComponent } from './components/user/user.component';
-import { WrapperComponent } from './components/wrapper/wrapper.component';
+import { ListComponent } from './pages/list/list.component';
+import { ForecastComponent } from './pages/forecast/forecast.component';
+import { UserComponent } from './pages/dashboard/dashboard.component';
+import { WrapperComponent } from './components/navbar/navbar.component';
 
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UploadComponent } from './components/upload/upload.component';
+import { UploadComponent } from './pages/upload/upload.component';
 
 const routes: Routes = [
   {
@@ -21,8 +22,16 @@ const routes: Routes = [
         component:UserComponent
       },
       {
+        path:'user/:id',
+        component:UserComponent
+      },
+      {
         path:'forecast',
         component:ForecastComponent
+      }
+      ,{
+        path:'list',
+        component:ListComponent
       }
     ]
   }

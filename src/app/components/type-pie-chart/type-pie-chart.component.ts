@@ -56,6 +56,7 @@ export class TypePieChartComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

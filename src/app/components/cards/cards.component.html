@@ -1,5 +1,5 @@
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-lg-3 col-md-6 col-sm-6">
       <div class="card card-stats">
           <div class="card-header card-header-warning card-header-icon">
@@ -13,7 +13,7 @@
           </div>
           <div class="card-footer">
             <div class="stats">
-                <!-- <i class="material-icons text-danger">warning</i> -->
+               
                 <div>Avaliable money limit</div>
             </div>
         </div>
@@ -71,6 +71,55 @@
           </div>
       </div>
     </div>
+</div>
+
+</div> -->
+
+<div class="cards-container">
+
+<div class="card-item">
+  <div class="card bg-c-blue order-card">
+    <div class="card-body">
+      <h6 class="text-white">Card Limit</h6>
+      <h2 class="text-right text-white"><i class="material-icons float-left "> account_balance 
+        
+        </i><span>₹1500</span>
+      </h2>
+      <p class="m-b-0">Avaliable money limit</p>
+    </div>
+  </div>
+</div>
+
+<div class="card-item">
+  <div class="card bg-c-green order-card">
+    <div class="card-body">
+      <h6 class="text-white">Spent money</h6>
+      <h2 class="text-right text-white"><i class="material-icons float-left ">account_balance_wallet</i><span>₹655</span></h2>
+      <p class="m-b-0">Total money spent</p>
+    </div>
+  </div>
+</div>
+
+
+<div class=" card-item">
+  <div class="card bg-c-yellow order-card">
+    <div class="card-body">
+      <h6 class="text-white">Cashback</h6>
+      <h2 class="text-right text-white"><i class="material-icons float-left ">collections_bookmark</i><span>₹123</span></h2>
+      <p class="m-b-0">Credit card benefit</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-item">
+  <div class="card bg-c-red order-card">
+    <div class="card-body">
+      <h6 class="text-white">Paymeny due on</h6>
+      <h2 class="text-right text-white"><i class="material-icons float-left ">access_time</i><span class="date-time">{{this.listService.chosenItem.customerPaymentDue}}</span></h2>
+      <p class="m-b-0">Debt repayment period</p>
+    </div>
+  </div>
 </div>
 
 </div>

@@ -18,9 +18,9 @@ export class UploadService {
     return this.httpClient.post(this.endpoint+"/pdf",formData)
   }
 
-  getFiles(): Observable<any> {
-    return this.httpClient.get(`${this.endpoint}/files`);
-  }
+  // getFiles(): Observable<any> {
+  //   return this.httpClient.get(`${this.endpoint}/files`);
+  // }
   getVisualmage(custno:string):Observable<Blob>
   {
     return this.httpClient.get(this.endpoint+"/getVisual?cust="+custno,{ responseType: 'blob' })

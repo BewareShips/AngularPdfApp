@@ -1,4 +1,4 @@
-import { UploadService } from './../../services/upload.service';
+import { UploadService } from '../../services/upload.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpEventType, HttpResponse } from '@angular/common/http';
@@ -42,7 +42,7 @@ createImageFromBlob(image: Blob) {
   constructor(private uploadService: UploadService) { }
 
   ngOnInit(): void {
-    this.FileDetail = this.uploadService.getFiles();
+    // this.FileDetail = this.uploadService.getFiles();
   }
   
   chooseFile(event:any ): void {
